@@ -19,30 +19,73 @@ export default class App extends React.Component {
       getList: [],
     };
   }
-  getUniqueId() {
-    return Math.random().toString(36).substring(7);
-  }
+  // uncomment the correct code.
 
-  addData(item) {
-    var randomRequestId = this.getUniqueId();
-    db.collection("todolist").add({
-      item: item,
-    });
+  // addData(item) {
+  //   db.collection("todolist").add({
+  //     item: item,
+  //   });
 
-    Alert.alert("Added Item");
-    this.setState({
-      item: "",
-    });
-  }
-  getData() {
-    db.collection("todolist").onSnapshot((snapshot) => {
-      var getList = snapshot.docs.map((document) => document.data());
+  //   Alert.alert("Added Item");
+  //   this.setState({
+  //     item: "",
+  //   });
+  // }
+  //---------------------------------------------------------
+  // addData(item) {
+  //   database.collection("todolist").add({
+  //     item: item,
+  //   });
 
-      this.setState({
-        getList: getList,
-      });
-    });
-  }
+  //   Alert.alert("Added Item");
+  //   this.setState({
+  //     item: "",
+  //   });
+  // }
+  //----------------------------------------------------------
+  // addData(item) {
+  //   db.collections("todolist").add({
+  //     item: item,
+  //   });
+
+  //   Alert.alert("Added Item");
+  //   this.setState({
+  //     item: "",
+  //   });
+  // }
+  // ---------------------------------------------------------
+
+  // uncomment the correct code.
+  // getData() {
+  //   db.collection("todolist").onSnapshot((snapshot) => {
+  //     var getList = snapshot.docs.map((document) => document.data());
+
+  //     this.setState({
+  //       getList: getList,
+  //     });
+  //   });
+  // }
+  //---------------------------------------------------------------
+  // getData() {
+  //   db.collections("todolist").onSnapshot((snapshot) => {
+  //     var getList = snapshot.docs.map((document) => document.data());
+
+  //     this.setState({
+  //       getList: getList,
+  //     });
+  //   });
+  // }
+  //-----------------------------------------------------------------------
+  // getData() {
+  //   db.collection("todolist").((snapshot) => {
+  //     var getList = snapshot.docs.map((document) => document.data());
+
+  //     this.setState({
+  //       getList: getList,
+  //     });
+  //   });
+  // }
+  // ----------------------------------------------------------------
 
   componentDidMount() {
     this.getData();
