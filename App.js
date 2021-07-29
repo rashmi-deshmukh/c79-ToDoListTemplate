@@ -20,6 +20,18 @@ export default class App extends React.Component {
     };
   }
   // uncomment the correct code.
+  
+  // addData(item) {
+  //   db.collection().add({
+  //     item: item,
+  //   });
+
+  //   Alert.alert("Added Item");
+  //   this.setState({
+  //     item: "",
+  //   });
+  // }
+  //---------------------------------------------------------
 
   // addData(item) {
   //   db.collection("todolist").add({
@@ -56,6 +68,16 @@ export default class App extends React.Component {
   // ---------------------------------------------------------
 
   // uncomment the correct code.
+  
+  // getData() {
+  //   db.collection("todolist"){
+  //     var getList = snapshot.docs.map((document) => document.data());
+  //     this.setState({
+  //       getList: getList,
+  //     });
+  //   });
+  // }
+  //---------------------------------------------------------------
   // getData() {
   //   db.collection("todolist").onSnapshot((snapshot) => {
   //     var getList = snapshot.docs.map((document) => document.data());
